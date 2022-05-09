@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/55faa7e024.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../scripts/styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+        <div class="container">
+            <a class="navbar-brand">
+                <i class="fa-solid fa-hospital"></i>
+                <span class="fs-6">
+                    Hospital Management
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigations">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigations">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="azdropdown" data-bs-toggle="dropdown">Appointment</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <a href="./addappointment.php" class="nav-link">Add Appointments</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./listappointment.php" class="nav-link">List of Appointments</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="azdropdown" data-bs-toggle="dropdown">Doctors</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <a href="./adddoctors.php" class="nav-link">Add Doctors</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./listdoctors.php" class="nav-link">List of Doctors</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="azdropdown" data-bs-toggle="dropdown">Patients</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <a href="./addpatient.php" class="nav-link">Add Patients</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./listpatient.php" class="nav-link">List of Patients</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <section id="home">
+        <div id="carouselIndicator" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/img1.jpg" alt="urspic" class="intro">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Welcome</h1>
+                            <p>Check out our system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/img2.jpg" alt="facade" class="school">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Explore</h1>
+                            <p>Explore every functionality and features of our system.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicator" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicator" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sections -->
+    <div class="bg-light">
+        <section class="container py-3">
+            <h1 class="my-4 text-center fs-4">Our Services</h1>
+            <div class="row">
+                <div class="col-sm-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="card">
+                        <h5 class="card-header">Appointment</h5>
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-calendar fa-4x mb-3"></i>
+                            <p class="card-text">
+                                Check out appointments.
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <a href="./addappointment.php"><button type="button" class="btn btn-outline-primary">Add<br>Appointments</button></a>
+                                    <a href="./listappointment.php"><button type="button" class="btn btn-outline-primary">List of<br>Appointments</button></a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4 mb-4">
+                    <div class="card">
+                        <h5 class="card-header">Doctors</h5>
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-user-doctor fa-4x mb-3"></i>
+                            <p class="card-text">
+                                Check our Doctors.
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <a href="./adddoctors.php"><button type="button" class="btn btn-outline-primary">Add<br>Doctors</button></a>
+                                    <a href="./listdoctors.php"><button type="button" class="btn btn-outline-primary">List of<br>Doctors</button></a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-4 mb-4 align-content-center">
+                    <div class="card">
+                        <h5 class="card-header">Patients</h5>
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-hospital-user fa-4x mb-3"></i>
+                            <p class="card-text">
+                                Check the patients.
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <a href="./addpatient.php"><button type="button" class="btn btn-outline-primary">Add<br>Patients</button></a>
+                                    <a href="./listpatient.php"><button type="button" class="btn btn-outline-primary">List of<br>Patients</button></a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
